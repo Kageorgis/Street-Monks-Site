@@ -117,6 +117,22 @@ html {
     color: black;
     cursor: pointer;
   }
+
+  /* Parallax*/
+
+  .parallax {
+    /* The image used */
+    background:linear-gradient(rgba(70,130,180, 0.5),
+                   rgba(70,130,180, 0.12)), url("https://cdn.glitch.com/21f3d4ce-fd20-4406-a1f4-ceeca5cf3078%2Fgoodwp.com-19460.jpg?v=1570687239766");
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
   
   /* Fade animation 
   ------------------------------------*/
