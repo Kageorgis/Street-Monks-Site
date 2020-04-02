@@ -10,279 +10,301 @@ $color5: rgba(148, 209, 190, 1);
 ------------------------------------*/
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    background-color:black;
-    margin: 0px;
-  }
-  
-  title {
-      font-family: 'potralight';
-      src: url('potra-webfont.woff2') format('woff2'),
-           url('potra-webfont.woff') fosrmat('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
-  
-  h1 {
-   color: white;
-  
-  }
-  
-  p {
-    color: white;
-  }
-  
-  nav {
-    font-family: 'Merriweather', serif;
-    display: block;
-    background-color:white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    text-align: center;
-  }
-  
-  a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration:none;
-    font-size: 18px;
-  }
-  
-  .exLinks a{
-    padding: 15px; 
-    display: inline-block;
-  }
-  
-  table, th, td {
-    border: 1px solid white;
-    width:60%;
-    color: white;
-    text-align: center;
-    margin: auto;
-  }
-  
-  center{
-    text-align: center;
-  }
-  
-  .content-wrap {
-    max-width: 950px;
-    margin:  auto;
-    padding: 50px;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .column-narrow {
-    padding: 10px;
-  }
-  
-  .crop {
-    width:600px; /*container-width*/
-    overflow:hidden; /*hide bounds of image */
-    margin:0;   /*reset margin of figure tag*/
-  }
-  
-  .crop img{
-    display:block;
-    width:100%;
-    margin:-21.875% 0;
-  }
-  
-  
-  
-  /* Buttons
-  ------------------------------------*/
-  
-  .button {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 6px 16px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .buttonBlack {
-    background-color: black;
-    border: none;
-    color: black;
-    cursor: pointer;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  /* Parallax*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  margin: 0px;
+}
 
-  .parallax {
-    /* The image used */
-    background:linear-gradient(rgba(70,130,180, 0.5),
-                   rgba(70,130,180, 0.12)), url("https://cdn.glitch.com/21f3d4ce-fd20-4406-a1f4-ceeca5cf3078%2Fgoodwp.com-19460.jpg?v=1570687239766");
-  
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  
-  /* Fade animation 
+title {
+  font-family: 'Montserrat', sans-serif;
+  src: url("potra-webfont.woff2") format("woff2"),
+    url("potra-webfont.woff") fosrmat("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+
+nav {
+  display: block;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+  z-index: 99;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 600px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.exLinks a {
+  padding: 15px;
+  display: inline-block;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  width: 60%;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
+
+center {
+  text-align: center;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  /*   overflow: hidden; */
+}
+
+.title {
+  padding: 40px 40px 20px 40px;
+}
+
+.crop {
+  width: 600px; /*container-width*/
+  overflow: hidden; /*hide bounds of image */
+  margin: 0; /*reset margin of figure tag*/
+}
+
+.crop img {
+  display: block;
+  width: 100%;
+  margin: -21.875% 0;
+}
+
+/* Buttons
   ------------------------------------*/
-  
-  .shadow-inset-lr:hover {
-      -webkit-animation: shadow-inset-lr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: shadow-inset-lr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-  
-  
-  @-webkit-keyframes shadow-inset-lr {
-    0% {
-      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      -webkit-box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5), inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
-              box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5), inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
-    }
-  }
-  @keyframes shadow-inset-lr {
-    0% {
-      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      -webkit-box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5), inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
-              box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5), inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
-    }
-  }
-  
-  /* Jellow animation 
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  border: none;
+  padding: 6px 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttonBlack {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.iconCont {
+    padding: 30px 0px 20px 0px;
+}
+
+a {
+    padding: 16px;
+}
+
+i {
+  color:black;
+}
+
+/* Parallax*/
+
+.parallax {
+  /* The image used */
+  background: linear-gradient(rgba(70, 130, 180, 0.5), rgba(70, 130, 180, 0.12)),
+    url("https://cdn.glitch.com/21f3d4ce-fd20-4406-a1f4-ceeca5cf3078%2Fgoodwp.com-19460.jpg?v=1570687239766");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fade animation 
   ------------------------------------*/
-  
-  .jello-horizontal:hover {
-      -webkit-animation: jello-horizontal 0.9s both;
-              animation: jello-horizontal 0.9s both;
+
+.shadow-inset-lr:hover {
+  -webkit-animation: shadow-inset-lr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-inset-lr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-inset-lr {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0),
+      inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
   }
-  
-  @-webkit-keyframes jello-horizontal {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
+  100% {
+    -webkit-box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5),
+      inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5),
+      inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
   }
-  @keyframes jello-horizontal {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
+}
+@keyframes shadow-inset-lr {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0),
+      inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 0 rgba(0, 0, 0, 0);
   }
-  
-  
-  
-  
-  /* CLICK ping animation 
+  100% {
+    -webkit-box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5),
+      inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset -6px 0 14px -6px rgba(0, 0, 0, 0.5),
+      inset 6px 0 14px -6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Jellow animation 
   ------------------------------------*/
-  
-  
-  .ping {
-      -webkit-animation: ping 1.5s ease-in-out infinite both;
-              animation: ping 1.5s ease-in-out infinite both;
+
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  
-  @-webkit-keyframes ping {
-    0% {
-      -webkit-transform: scale(0.2);
-              transform: scale(0.2);
-      opacity: 0.8;
-    }
-    80% {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(2.2);
-              transform: scale(2.2);
-      opacity: 0;
-    }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
-  @keyframes ping {
-    0% {
-      -webkit-transform: scale(0.2);
-              transform: scale(0.2);
-      opacity: 0.8;
-    }
-    80% {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(2.2);
-              transform: scale(2.2);
-      opacity: 0;
-    }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
-  
-  
-  
-  
-  
-  
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* CLICK ping animation 
+  ------------------------------------*/
+
+.ping {
+  -webkit-animation: ping 1.5s ease-in-out infinite both;
+  animation: ping 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
