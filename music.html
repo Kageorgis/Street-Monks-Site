@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- javascript file -->
     <script src="script.js" defer></script>
 
@@ -30,38 +32,58 @@
       />
     </div>
 
+        <!-- Side Cutain -->
+
+        <div class="topnav hamburger">
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="dates.html">Live Dates</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+          </div>
+        </div>
+
+    <!-- Nav Bar -->
+
     <nav id="myHeader">
       <a href="index.html"
-        ><button class="button shadow-inset-lr">Home</button></a
+      class="text-pop-up-top">Home</a
       >
       <a href="music.html"
-        ><button class="button shadow-inset-lr">Music</button></a
+      class="text-pop-up-top">Music</a
       >
       <a href="dates.html"
-        ><button class="button shadow-inset-lr">Live Dates</button></a
+      class="text-pop-up-top">Live Dates</a
       >
       <a href="contact.html"
-        ><button class="button shadow-inset-lr">Contact</button></a
+      class="text-pop-up-top">Contact</a
       >
     </nav>
 
-    <div class="content-wrap">
+    <!-- smedia Icon Container -->
+
+    <div class="content-wrap content">
       <div class="center iconCont">
         <a href="https://www.instagram.com/street_monks" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
+          ><button class="button shake-lr"><i class="fab fa-instagram"></i
+        ></button></a>
         <a href="https://www.facebook.com/streetmonks" target="_blank"
-          ><i class="fab fa-facebook"></i
-        ></a>
+          ><button class="button shake-lr"><i class="fab fa-facebook"></i
+        ></button></a>
         <a href="https://www.facebook.com/streetmonks" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
+          ><button class="button shake-lr"><i class="fab fa-twitter"></i
+        ></button></a>
         <a href="https://open.spotify.com/artist/7pm6UNQsWtVLIc8Jhxcvii"
-          ><i class="fab fa-spotify"></i
-        ></a>
+          ><button class="button shake-lr"><i class="fab fa-spotify"></i
+        ></button></a>
         <a href="https://open.spotify.com/artist/7pm6UNQsWtVLIc8Jhxcvii"
-          ><i class="fab fa-itunes"></i
-        ></a>
+          ><button class="button shake-lr"><i class="fab fa-itunes"></i
+        ></button></a>
       </div>
     </div>
 
