@@ -68,6 +68,10 @@ nav a {
   text-decoration: underline;
 }
 
+.contact-info:hover{
+  text-decoration: underline;
+}
+
 footer a {
   padding: 20px 10px;
   color: black;
@@ -83,15 +87,27 @@ td {
   margin: auto;
 }
 
+.content-wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  text-align: center;
+  /* padding: 15px; */
+}
+
 center {
   text-align: center;
 }
 
-.content-wrap {
-  max-width: 950px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px;
+.crop {
+  width: 100%; 
+}
+
+#albCover.crop {
+  width: 40%; 
+}
+
+#logo.crop {
+  width: 20%; 
 }
 
 .title {
@@ -99,15 +115,11 @@ center {
   max-width: 60%;
 }
 
-.crop {
-  width: 100%; /*container-width*/
-}
-
 
 /* STICKY
 -------------------------- */
 .content {
-  padding: 16px;
+  padding-top: 16px;
   z-index: 99;
 }
 
@@ -133,8 +145,7 @@ center {
   border: none;
   padding: 6px 16px;
   text-align: center;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
   cursor: pointer;
 }
 
