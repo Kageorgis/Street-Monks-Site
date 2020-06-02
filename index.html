@@ -17,13 +17,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- javascript file -->
+    <!-- Javascript files -->
     <script src="script.js" defer></script>
 
     <script
       src="https://kit.fontawesome.com/29a1f6b3df.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168201879-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-168201879-1');
+    </script>
   </head>
   <body>
   
@@ -67,7 +77,7 @@
       >
     </nav>
 
-    <!-- smedia Icon Container -->
+    <!-- Icon Container -->
 
     <div class="content-wrap content">
       <div class="iconCont">
@@ -96,7 +106,8 @@
           <img src="assets/threeStoogesAnimatedVer2.gif" class="crop" id="threeSt">
 
           <br><br><br>
-          <h2><b>New Album 'While We Wait' Out Now!<b></h2>
+          <h2><b>New Album <a href="https://open.spotify.com/artist/7pm6UNQsWtVLIc8Jhxcvii" target="_blank"
+            >'While We Wait'</a> Out Now! <b></h2>
           <br><br>
           <img src="assets/AlbumCoverFinalRev1.png" class="crop" id="albCover">
         </div>
@@ -131,10 +142,25 @@
 
     <br> <br>
 
-    <p><b>Art:</b> Mary Meneses</p>
+  <p>
+      Art:
+      <a href="https://www.instagram.com/juicy.trout/" class="contact-info"
+        >Beth Meneses
+        <img 
+        class="logo" 
+        src="assets/instagram-Logo.png"
+        ></a>
 
-    <p><b>Web Dev:</b> Aramayis Kageorgis</p>
+        <p>Web Dev:&nbsp &nbsp Aramayis Kageorgis</p>
+<!-- 
+      <img
+        src="assets/instagram-Logo.png" 
+        style="float: right"
+        width="30%"
+        > -->
+        <br>
 
-    <p>Copyright 2020 by Street Monks</p>
+    <p>Copyright 2020 by Street Monks</p> 
+    <!-- <br style="clear: both;" /></p> -->
   </footer>
 </html>

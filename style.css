@@ -48,6 +48,11 @@ a {
   cursor: pointer;
 }
 
+h4{
+  font-size: 20px;
+  font-style: italic;
+}
+
 .exLinks a {
   padding: 15px;
   display: inline-block;
@@ -77,14 +82,19 @@ footer a {
   color: black;
 }
 
-table,
-th,
-td {
-  border: 1px solid white;
-  width: 60%;
-  color: black;
-  text-align: center;
-  margin: auto;
+h2 a {
+  font-size: larger;
+}
+
+.logo{
+  padding-left:5px;
+  vertical-align:middle;
+  width:2.5%;
+}
+
+#logo2 img{
+  padding-left:20px;
+  width:2%;
 }
 
 .content-wrap {
@@ -141,7 +151,7 @@ center {
 
 .button {
   font-family: 'Montserrat', sans-serif;
-  background-color: white;
+  background-color:white;
   border: none;
   padding: 6px 16px;
   text-align: center;
@@ -157,6 +167,11 @@ center {
 
 .iconCont {
     padding: 30px 0px 20px 0px;
+}
+
+#iconCont button{
+  font-size: 30px;
+  padding-top: 20px;
 }
 
 i {
