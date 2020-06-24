@@ -104,6 +104,28 @@ h2 a {
   /* padding: 15px; */
 }
 
+/* .iframe-container {
+  max-width: 1920px;
+  text-align: center;
+  padding-left:50px;
+  padding-right:50px;
+} */
+ 
+/* .iframe-container iframe {
+  height: 100%;
+  width: 100%;
+} */
+ 
+/* 4x3 Aspect Ratio */
+/* .iframe-container-4x3 {
+  padding-top: 75%;
+} */
+
+iframe {
+  width:560px;
+  height:315px;
+}
+
 center {
   text-align: center;
 }
@@ -117,7 +139,7 @@ center {
 }
 
 #logo.crop {
-  width: 20%; 
+  width: 30%; 
 }
 
 .title {
@@ -166,7 +188,7 @@ center {
 }
 
 .iconCont {
-    padding: 30px 0px 20px 0px;
+    padding: 30px 0px 0px 0px;
 }
 
 #iconCont button{
@@ -177,6 +199,7 @@ center {
 i {
   color:black;
 }
+
 
 
 /* START MOBILE 
@@ -193,6 +216,35 @@ i {
 @media only screen and (max-width: 625px) {
   nav {
     display: none;
+  }
+  .title {
+    padding: 40px 40px 20px 40px;
+    max-width: 95%;
+  }
+  .logo{
+    padding-left:5px;
+    vertical-align:middle;
+    width:5%;
+  }
+  #albCover.crop {
+    width: 60%; 
+  }
+  #logo.crop {
+    width: 50%; 
+  }
+  iframe {
+    width:300px;
+    height:340px;
+  }
+  #utube iframe{
+    display: none;
+  }
+  div#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 0;
+  }
+  div.iconCont{
+    padding: 0;
   }
 }
 
