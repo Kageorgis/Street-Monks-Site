@@ -80,10 +80,12 @@ nav a {
 footer a {
   padding: 20px 10px;
   color: black;
+  cursor: pointer;
 }
 
 h2 a {
   font-size: larger;
+  cursor: pointer;
 }
 
 .logo{
@@ -121,9 +123,19 @@ h2 a {
   padding-top: 75%;
 } */
 
-iframe {
+#play iframe {
   width:560px;
   height:315px;
+}
+
+#utube iframe {
+  width:560px;
+  height:315px;
+}
+
+#follow iframe {
+  width:300px;
+  height:56px;
 }
 
 center {
@@ -209,6 +221,9 @@ i {
     div.hamburger {
       display: none;
     }
+    #landMob{
+      display: none;
+    }
   }
 
 /* Hide element When the browser's width is 600px wide or less */
@@ -219,7 +234,7 @@ i {
   }
   .title {
     padding: 40px 40px 20px 40px;
-    max-width: 95%;
+    max-width: 100%;
   }
   .logo{
     padding-left:5px;
@@ -232,7 +247,7 @@ i {
   #logo.crop {
     width: 75%; 
   }
-  iframe {
+  #play iframe {
     width:300px;
     height:340px;
   }
@@ -252,6 +267,9 @@ i {
   }
   .sticky + .content {
     padding-top: 0px;
+  }
+  #threeSt{
+    display: none;
   }
 }
 
